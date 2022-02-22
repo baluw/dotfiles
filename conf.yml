@@ -1,0 +1,185 @@
+---
+shortcuts:
+  commands:
+    "<Alt>F2": xfce4-popup-whiskermenu
+    "<Super>r": xfce4-terminal
+    "<Super>x": rofimoji
+    "<Primary>Right": screenshot
+    "<Primary><Alt>f": xfce4-screenshooter -c -r
+  wm:
+    show_desktop: "<Shift><Super>d"
+    tile_up_left: "<Super>i"
+    tile_down_left: "<Super>k"
+    tile_down_right: "<Super>l"
+    tile_right: "<Super>Right"
+    tile_up_right: "<Super>o"
+    tile_left: "<Super>Left"
+    close_window: "<Super>q"
+    tile_down: "<Super>Down"
+    maximize_window: "<Super>Up"
+settings:
+  xfce4-desktop:
+    "/desktop-icons/file-icons/show-filesystem": false
+    "/desktop-icons/file-icons/show-home": false
+    "/desktop-icons/file-icons/show-removable": true
+    "/desktop-icons/file-icons/show-trash": true
+    "/desktop-icons/icon-size": 48
+    "/desktop-icons/primary": false
+    "/desktop-icons/show-hidden-files": false
+    "/desktop-icons/show-thumbnails": true
+    "/desktop-icons/show-tooltips": true
+    "/desktop-icons/single-click": false
+    "/desktop-icons/style": 2
+  keyboards:
+    "/Default/KeyRepeat": true
+    "/Default/KeyRepeat/Delay": 500
+    "/Default/RestoreNumlock": false
+  xsettings:
+    "/Gtk/ButtonImages": false
+    "/Gtk/CursorThemeName": WhiteSur-cursors
+    "/Gtk/DecorationLayout": ":minimize,maximize,close"
+    "/Gtk/FontName": Open Sans 10
+    "/Gtk/MonospaceFontName": Source Code Pro 10
+    "/Net/IconThemeName": WhiteSur-dark
+    "/Net/ThemeName": Orchis-purple-dark
+    "/Xfce/LastCustomDPI": 96
+    "/Xft/DPI": -1
+    "/Xft/HintStyle": hintslight
+    "/Xft/Hinting": 1
+  ristretto:
+    "/window/navigationbar/position": left
+  xfwm4:
+    "/general/button_layout": S|HMC
+    "/general/easy_click": Super
+    "/general/show_dock_shadow": false
+    "/general/show_frame_shadow": false
+    "/general/theme": Orchis-purple-dark
+    "/general/title_alignment": left
+    "/general/title_font": Open Sans 10
+    "/general/workspace_count": 1
+    "/general/workspace_names":
+    - '1'
+  xfce4-notifyd:
+    "/do-not-disturb": false
+    "/log-level": 1
+    "/log-level-apps": 0
+    "/log-max-size": 15
+    "/notification-log": true
+    "/notify-location": 2
+    "/primary-monitor": 0
+    "/theme": Default
+  xfce4-power-manager:
+    "/xfce4-power-manager/blank-on-ac": 5
+    "/xfce4-power-manager/blank-on-battery": 5
+    "/xfce4-power-manager/brightness-level-on-ac": 20
+    "/xfce4-power-manager/brightness-on-ac": 120
+    "/xfce4-power-manager/brightness-on-battery": 120
+    "/xfce4-power-manager/dpms-on-ac-off": 7
+    "/xfce4-power-manager/dpms-on-ac-sleep": 6
+    "/xfce4-power-manager/dpms-on-battery-off": 7
+    "/xfce4-power-manager/dpms-on-battery-sleep": 6
+    "/xfce4-power-manager/handle-brightness-keys": true
+    "/xfce4-power-manager/inactivity-on-battery": 15
+    "/xfce4-power-manager/inactivity-sleep-mode-on-battery": 1
+    "/xfce4-power-manager/lid-action-on-ac": 0
+    "/xfce4-power-manager/lid-action-on-battery": 1
+    "/xfce4-power-manager/logind-handle-lid-switch": false
+    "/xfce4-power-manager/presentation-mode": false
+    "/xfce4-power-manager/show-panel-label": 0
+    "/xfce4-power-manager/show-presentation-indicator": false
+  accessibility:
+    "/FindCursor": false
+    "/MouseKeys": false
+  xfce4-screensaver:
+    "/lock/enabled": true
+    "/lock/status-messages/enabled": false
+    "/lock/user-switching/enabled": false
+    "/saver/enabled": true
+    "/saver/fullscreen-inhibit": true
+    "/saver/mode": 0
+  keyboard-layout:
+    "/Default/XkbDisable": false
+    "/Default/XkbLayout": pl,ru
+    "/Default/XkbOptions/Group": grp:menu_toggle
+    "/Default/XkbVariant": ",phonetic"
+  thunar:
+    "/misc-change-window-icon": true
+    "/misc-directory-specific-settings": false
+    "/misc-file-size-binary": true
+    "/misc-folders-first": true
+    "/misc-middle-click-in-tab": true
+    "/misc-single-click": false
+    "/misc-text-beside-icons": false
+    "/misc-thumbnail-draw-frames": false
+    "/misc-thumbnail-mode": THUNAR_THUMBNAIL_MODE_ONLY_LOCAL
+    "/shortcuts-icon-emblems": true
+    "/tree-icon-emblems": true
+    "/tree-icon-size": THUNAR_ICON_SIZE_16
+  xfce4-session:
+    "/compat/LaunchGNOME": true
+    "/compat/LaunchKDE": true
+    "/general/LockCommand": slock
+    "/general/SaveOnExit": false
+panels:
+- enter-opacity: 100
+  disable-struts: false
+  icon-size: 16
+  size: 32
+  background-rgba:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.5
+  position-locked: true
+  nrows: 1
+  position: p=8;x=960;y=1066
+  length: 100
+  background-style: 1
+  leave-opacity: 100
+  plugins:
+  - - whiskermenu
+  - - docklike
+  - - separator
+    - style: 0
+      expand: true
+  - - systray
+    - known-items:
+      - obs
+      - discord1
+      - TelegramDesktop
+      square-icons: true
+      icon-size: 22
+      menu-is-primary: false
+      hidden-legacy-items:
+      - networkmanager applet
+      known-legacy-items:
+      - thunar
+      - networkmanager applet
+      - redshift-gtk
+      - nextcloud
+      - hexchat
+      - deluge
+      hide-new-items: false
+      single-row: false
+      symbolic-icons: true
+      hidden-items:
+      - KDE Connect Indicator
+      - redshift
+      - blueman
+      - steam
+      - QuasselIRC
+      - KeePassXC
+      - Nicotine+
+      - Nextcloud
+  - - power-manager-plugin
+  - - pulseaudio
+    - enable-keyboard-shortcuts: true
+      enable-wnck: false
+      mpris-players: chromium.instance4431;chromium.instance51006;chromium.instance893
+  - - notification-plugin
+  - - clock
+    - digital-format: " %R | %d/%m/%Y"
+      mode: 2
+      tooltip-format: "%x"
+  - - separator
+    - style: 0
